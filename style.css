@@ -1,0 +1,27 @@
+body {
+  background-color: lavender;
+  font-family: "Helvetica", sans-serif;
+}
+
+#animated {
+  color: coral;
+  font-size: 2em;
+}
+
+.letter {
+  opacity: 0%;
+  animation: slide 0.5s forwards;
+  display: inline-block;
+  animation-timing-function: cubic-bezier(0.49, 0.04, 1, 2);
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0%;
+    transform: translate(0px, 50px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
