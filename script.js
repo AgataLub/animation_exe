@@ -14,7 +14,7 @@ function getText() {
 
   let children = document.querySelector("#animated").childNodes;
   for (var i = 0; i < children.length; i++) {
-    children[i].style.setProperty("animation-delay", i / 9 + "s");
+    children[i].style.setProperty("animation-delay", i * 0.1 + "s");
   }
 }
 
